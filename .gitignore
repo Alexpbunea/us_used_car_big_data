@@ -178,3 +178,4 @@ cython_debug/
 *.csv
 
 used_cars_data_cleaned/
+metastore_db/

@@ -7,6 +7,7 @@ import time
 
 spark = SparkSession.builder \
     .appName("CarBrandStats") \
+    .config("spark.executor.memory", "4g") \
     .config("spark.sql.parquet.filterPushdown", "true") \
     .config("spark.sql.parquet.mergeSchema", "false") \
     .config("spark.sql.shuffle.partitions", "4") \
